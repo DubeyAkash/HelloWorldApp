@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,6 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorldAppAPI.Tests\HelloWorldAppAPI.Tests.csproj">
+      <Project>{b6de0261-569d-49dc-bbed-18bd0cc0bdc5}</Project>
+      <Name>HelloWorldAppAPI.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWorldAppAPI\HelloWorldAppAPI.csproj">
+      <Project>{9c826c93-cdd5-4ef2-a955-268ea04a41aa}</Project>
+      <Name>HelloWorldAppAPI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
